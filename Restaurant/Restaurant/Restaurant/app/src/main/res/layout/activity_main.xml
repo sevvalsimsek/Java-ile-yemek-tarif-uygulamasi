@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3">
+
+    </ProgressBar>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ZUBİ RESTAURANT"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="ZUBİ Restaurantımıza Hoş Geldiniz. Afiyet Olsun"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="340dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/editbutton"
+                android:hint="   E-Mail"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etŞifre"
+                android:layout_width="340dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/editbutton"
+                android:hint="   Şifre"
+                android:inputType="textPassword"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black">
+
+            </EditText>
+
+
+            <Button
+                android:text="Giriş yapmak için tıklayın"
+                android:id="@+id/btnGiris"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"></Button>
+
+            <TextView
+                android:id="@+id/sifremiunuttum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Şifremi Unuttum"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvKayıtOl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Kayıt Ol"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold|italic">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="90dp"
+                    app:srcCompat="@drawable/zubilogo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kayit"
+    android:background="@color/teal_200"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="KAYIT OL"
+            android:layout_marginTop="20dp"
+
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Soyad"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Telefon No"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/tc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Tc"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/black"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Sifre"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Kayıt ol"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Hesabınız var mı ?"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvGirişYap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="GİRİŞ YAP"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Anasayfa" android:id="@+id/anasayfa"  android:icon="@drawable/ic_home"/>
+    <item android:title="favoriler" android:id="@+id/favori" android:icon="@drawable/ic_favorite" />
+
+</menu>
